@@ -8,4 +8,9 @@ Due to how early I am starting, it will also give me more than enough time to co
 
 My actual data points will be about my screen time usage, whether that is on my phone or on my laptop, and it will be further broken down into the top 5 most used or watched apps that make up a percentage of that daily screen time.
 
+<<<<<<< HEAD
 These data points will be displayed in an unique, creative way that shows the progression of my data. There will also be a title, the days, time and a key to assist the person viewing my Project by removing any confusion, and enhancing understanding.
+=======
+These data points will be displayed in an unique, creative way that shows the progression of my data. There will also be a title, the days, time and a key to assist the person viewing my Project by removing any confusion, and enhancing understanding.
+
+>>>>>>> e03e0d16d346e680f1988bc2f5f5204fec4740c0
