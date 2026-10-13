@@ -1,0 +1,3 @@
+This is where I will be inputting my daily data collection loggings
+It will help with making sure that I do not lose track of any vital information
+Additionally, this log will also be where I explain my processing walkthrough on how I code everything.
