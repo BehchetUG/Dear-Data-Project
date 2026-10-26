@@ -1,6 +1,10 @@
-float x;
-float y;
+//float[] rowY = {60,150,250,350,450,550,650};
 
+//String[] days = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
+
+//String[] totals = {"5 hrs 40 mins", "5 hrs 30 mins", "7 hrs 50 mins", "6 hrs 30 mins", "8 hrs 20 mins", "9 hrs 50 mins", "11 hrs 30 mins"};
+
+//float[] appXvalues = {160, 253, 350, 437, 520}; Getting ready to optimize using for loops and arrays
 
 // Need to optimize this as I've written too much repeated lines of code
 
@@ -25,60 +29,102 @@ void draw()
   //Monday
   
   DrawSpotify();
+  text("1h 30m", 160-25, 60+40);
   DrawIG();
+  text("30m", 240,60+40);
   DrawTT();
+  text("1h 40m", 330,60+40);
   DrawYT();
+  text("1h 40m", 410,60+40);
   DrawWhatsApp();
+  text("20m",510,60+40);
   text("Total :", 750, 60);
+  text("5 hrs 40 mins", 800,60);
 
   // Tuesday
   
   DrawSpotify();
+  text("1h 15m", 160-25,150+40);
   DrawIG();
+  text("40m", 240,150+40);
   DrawTT();
+  text("1h 45m", 330,150+40);
   DrawYT();
+  text("1h 25m", 410, 150+40);
   DrawWhatsApp();
+  text("25m", 510, 150+40);
   text("Total :", 750, 150);
+  text("5 hrs 30 mins", 800,150);
 
   // Wednesday
   DrawSpotify();
+  text("1h 40m", 160-25,250+40);
   DrawIG();
+  text("1h 0m", 240, 250+40);
   DrawTT();
+  text("2h 0m", 330, 250+40);
   DrawYT();
+  text("2h 30m", 410, 250+40);
   DrawWhatsApp();
+  text("40m", 510, 250+40);
   text("Total :", 750, 250);
+  text("7 hrs 50 mins", 800,250);
 
   // Thursday
   DrawSpotify();
+  text("2h 0m", 160-25, 350+40);
   DrawIG();
+  text("1h 0m", 240, 350+40);
   DrawTT();
+  text("1h 35m", 330, 350+40);
   DrawYT();
+  text("1h 30m", 410, 350+40);
   DrawWhatsApp();
+  text("25m", 510, 350+40);
   text("Total :", 750, 350);
+  text("6 hrs 30 mins", 800,350);
 
   // Friday
   DrawSpotify();
+  text("2h 10m", 160-25, 450+40);
   DrawIG();
+  text("1h 0m", 240, 450+40);
   DrawTT();
+  text("1h 35m", 330, 450+40);
   DrawYT();
+  text("1h 30m", 410, 450+40);
   DrawWhatsApp();
+  text("25m", 510, 450+40);
   text("Total :", 750, 450);
+  text("8 hrs 20 mins", 800,450);
 
   // Saturday
   DrawSpotify();
+  text("2h 05m", 160-25, 550+40);
   DrawIG();
+  text("1h 20m", 240, 550+40);
   DrawTT();
+  text("2h 30m", 330, 550+40);
   DrawYT();
+  text("3h 10m", 410, 550+40);
   DrawWhatsApp();
+  text("45m", 510, 550+40);
   text("Total :", 750, 550);
+  text("9 hrs 50 mins", 800,550);
 
   // Sunday
   DrawSpotify();
+  text("2h 30m", 160-25, 650+40);
   DrawIG();
+  text("1h 35m", 240, 650+40);
   DrawTT();
+  text("2h 55m", 330, 650+40);
   DrawYT();
+  text("3h 40m", 410, 650+40);
   DrawWhatsApp();
+  text("50m", 510, 650+40);
   text("Total :", 750, 650);
+  text("11 hrs 30 mins", 800,650);
 
   fill(128);
   text("Monday", 50, 60);
