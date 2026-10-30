@@ -8,16 +8,26 @@
 
 // Need to optimize this as I've written too much repeated lines of code
 
+
+float x = 1050;
+float y = 120;
+
+String[] appNames = {"Spotify", "Instagram", "Tiktok", "YouTube", "Whatsapp"};
+
+String[] weeklyTimes = {"week: 13h 10m", "week: 7h 05m", "week: 14h 00m", "week: 15 25m", "week: 3h 50m"};
+
+float[] keyY = {220, 320, 420, 520, 620};
+
 void setup()
 
 {
 
   size(1200, 800);
-  DrawSpotify();
-  DrawYT();
-  DrawTT();
-  DrawYT();
-  DrawWhatsApp();
+  //DrawSpotify();
+  //DrawYT();
+  //DrawTT();
+  //DrawYT();
+  //DrawWhatsApp();
   textSize(18);
 }
 
@@ -27,104 +37,104 @@ void draw()
   background(255, 183, 238);
 
   //Monday
-  
-  DrawSpotify();
+
+  //DrawSpotify();
   text("1h 30m", 160-25, 60+40);
-  DrawIG();
-  text("30m", 240,60+40);
-  DrawTT();
-  text("1h 40m", 330,60+40);
-  DrawYT();
-  text("1h 40m", 410,60+40);
-  DrawWhatsApp();
-  text("20m",510,60+40);
+  //DrawIG();
+  text("30m", 240, 60+40);
+  //DrawTT();
+  text("1h 40m", 330, 60+40);
+  //DrawYT();
+  text("1h 40m", 410, 60+40);
+  //DrawWhatsApp();
+  text("20m", 510, 60+40);
   text("Total :", 750, 60);
-  text("5 hrs 40 mins", 800,60);
+  text("5 hrs 40 mins", 800, 60);
 
   // Tuesday
-  
-  DrawSpotify();
-  text("1h 15m", 160-25,150+40);
-  DrawIG();
-  text("40m", 240,150+40);
-  DrawTT();
-  text("1h 45m", 330,150+40);
-  DrawYT();
+
+  //DrawSpotify();
+  text("1h 15m", 160-25, 150+40);
+  //DrawIG();
+  text("40m", 240, 150+40);
+  //DrawTT();
+  text("1h 45m", 330, 150+40);
+  //DrawYT();
   text("1h 25m", 410, 150+40);
-  DrawWhatsApp();
+  //DrawWhatsApp();
   text("25m", 510, 150+40);
   text("Total :", 750, 150);
-  text("5 hrs 30 mins", 800,150);
+  text("5 hrs 30 mins", 800, 150);
 
   // Wednesday
-  DrawSpotify();
-  text("1h 40m", 160-25,250+40);
-  DrawIG();
+  //DrawSpotify();
+  text("1h 40m", 160-25, 250+40);
+  //DrawIG();
   text("1h 0m", 240, 250+40);
-  DrawTT();
+  //DrawTT();
   text("2h 0m", 330, 250+40);
-  DrawYT();
+  //DrawYT();
   text("2h 30m", 410, 250+40);
-  DrawWhatsApp();
+  //DrawWhatsApp();
   text("40m", 510, 250+40);
   text("Total :", 750, 250);
-  text("7 hrs 50 mins", 800,250);
+  text("7 hrs 50 mins", 800, 250);
 
   // Thursday
-  DrawSpotify();
+  //DrawSpotify();
   text("2h 0m", 160-25, 350+40);
-  DrawIG();
+  //DrawIG();
   text("1h 0m", 240, 350+40);
-  DrawTT();
+  //DrawTT();
   text("1h 35m", 330, 350+40);
-  DrawYT();
+  //DrawYT();
   text("1h 30m", 410, 350+40);
-  DrawWhatsApp();
+  //DrawWhatsApp();
   text("25m", 510, 350+40);
   text("Total :", 750, 350);
-  text("6 hrs 30 mins", 800,350);
+  text("6 hrs 30 mins", 800, 350);
 
   // Friday
-  DrawSpotify();
+  //DrawSpotify();
   text("2h 10m", 160-25, 450+40);
-  DrawIG();
+  //DrawIG();
   text("1h 0m", 240, 450+40);
-  DrawTT();
+  //DrawTT();
   text("1h 35m", 330, 450+40);
-  DrawYT();
+  //DrawYT();
   text("1h 30m", 410, 450+40);
-  DrawWhatsApp();
+  //DrawWhatsApp();
   text("25m", 510, 450+40);
   text("Total :", 750, 450);
-  text("8 hrs 20 mins", 800,450);
+  text("8 hrs 20 mins", 800, 450);
 
   // Saturday
-  DrawSpotify();
+  //DrawSpotify();
   text("2h 05m", 160-25, 550+40);
-  DrawIG();
+  //DrawIG();
   text("1h 20m", 240, 550+40);
-  DrawTT();
+  //DrawTT();
   text("2h 30m", 330, 550+40);
-  DrawYT();
+  //DrawYT();
   text("3h 10m", 410, 550+40);
-  DrawWhatsApp();
+  //DrawWhatsApp();
   text("45m", 510, 550+40);
   text("Total :", 750, 550);
-  text("9 hrs 50 mins", 800,550);
+  text("9 hrs 50 mins", 800, 550);
 
   // Sunday
-  DrawSpotify();
+  //DrawSpotify();
   text("2h 30m", 160-25, 650+40);
-  DrawIG();
+  //DrawIG();
   text("1h 35m", 240, 650+40);
-  DrawTT();
+  //DrawTT();
   text("2h 55m", 330, 650+40);
-  DrawYT();
+  //DrawYT();
   text("3h 40m", 410, 650+40);
-  DrawWhatsApp();
+  //DrawWhatsApp();
   text("50m", 510, 650+40);
   text("Total :", 750, 650);
-  text("11 hrs 30 mins", 800,650);
+  text("11 hrs 30 mins", 800, 650);
 
   fill(128);
   text("Monday", 50, 60);
@@ -140,11 +150,21 @@ void draw()
   text("Saturday", 50, 540);
   line(700, 590, 40, 590);
   text("Sunday", 50, 620);
+
+  //// Key
+  //text("Key", 1040, 120);
+  //DrawSpotify();
+  //DrawIG();
+  //DrawTT(); // using the x and y values for the key passed as parameters maybe
+  //DrawYT();
+  //DrawWhatsApp();
+
+  drawKey();
 }
 
 
-// Shapes 
-void DrawSpotify()
+// Shapes
+void DrawSpotify(float x, float y)
 {
 
   // Monday
@@ -217,16 +237,25 @@ void DrawSpotify()
   rect(147, 660, 26, 4, 50);
   popStyle();
 
+  //key
+  pushStyle();
+  fill(27, 242, 50);
+  circle(x, y, 50);
+  fill(255);
+  rect(x - 15, y - 10, 30, 4, 50);
+  rect(x - 14, y, 28, 4, 50);
+  rect(x - 13, y + 10, 26, 4, 50);
+  popStyle();
 }
 
-void DrawYT()
+void DrawYT(float x, float y)
 {
 
   // Monday
   pushStyle();
   noStroke();
-  fill(255,0,0);
-  rect(415, 38, 45,45,10);
+  fill(255, 0, 0);
+  rect(415, 38, 45, 45, 10);
   fill(255);
   triangle(432, 49, 432, 72, 449, 60);
   popStyle();
@@ -234,8 +263,8 @@ void DrawYT()
   // Tuesday
   pushStyle();
   noStroke();
-  fill(255,0,0);
-  rect(415, 128, 45,45,10);
+  fill(255, 0, 0);
+  rect(415, 128, 45, 45, 10);
   fill(255);
   triangle(432, 139, 432, 162, 449, 150);
   popStyle();
@@ -243,8 +272,8 @@ void DrawYT()
   // Wednesday
   pushStyle();
   noStroke();
-  fill(255,0,0);
-  rect(415, 228, 45,45,10);
+  fill(255, 0, 0);
+  rect(415, 228, 45, 45, 10);
   fill(255);
   triangle(432, 239, 432, 262, 449, 250);
   popStyle();
@@ -252,8 +281,8 @@ void DrawYT()
   // Thursday
   pushStyle();
   noStroke();
-  fill(255,0,0);
-  rect(415, 328, 45,45,10);
+  fill(255, 0, 0);
+  rect(415, 328, 45, 45, 10);
   fill(255);
   triangle(432, 339, 432, 362, 449, 350);
   popStyle();
@@ -261,8 +290,8 @@ void DrawYT()
   // Friday
   pushStyle();
   noStroke();
-  fill(255,0,0);
-  rect(415, 428, 45,45,10);
+  fill(255, 0, 0);
+  rect(415, 428, 45, 45, 10);
   fill(255);
   triangle(432, 439, 432, 462, 449, 450);
   popStyle();
@@ -270,8 +299,8 @@ void DrawYT()
   // Saturday
   pushStyle();
   noStroke();
-  fill(255,0,0);
-  rect(415, 528, 45,45,10);
+  fill(255, 0, 0);
+  rect(415, 528, 45, 45, 10);
   fill(255);
   triangle(432, 539, 432, 562, 449, 550);
   popStyle();
@@ -279,22 +308,30 @@ void DrawYT()
   // Sunday
   pushStyle();
   noStroke();
-  fill(255,0,0);
-  rect(415, 628, 45,45,10);
+  fill(255, 0, 0);
+  rect(415, 628, 45, 45, 10);
   fill(255);
   triangle(432, 639, 432, 662, 449, 650);
   popStyle();
 
+  // Key
+  pushStyle();
+  noStroke();
+  fill(255, 0, 0);
+  rect(x - 22.5, y - 22.5, 45, 45, 10);
+  fill(255);
+  triangle(x - 5.5, y - 11, x - 5.5, y + 12, x + 11.5, y);
+  popStyle();
 }
 
-void DrawTT()
+void DrawTT(float x, float y)
 {
   // Monday
   pushStyle();
   noStroke();
   fill(0);
   circle(350, 60, 50);
-  fill(255,0,0);
+  fill(255, 0, 0);
   circle(346, 69, 12);
   rect(351, 48, 5, 25, 3);
   rect(351, 48, 19, 5, 3);
@@ -309,7 +346,7 @@ void DrawTT()
   noStroke();
   fill(0);
   circle(350, 150, 50);
-  fill(255,0,0);
+  fill(255, 0, 0);
   circle(346, 159, 12);
   rect(351, 138, 5, 25, 3);
   rect(351, 138, 19, 5, 3);
@@ -324,7 +361,7 @@ void DrawTT()
   noStroke();
   fill(0);
   circle(350, 250, 50);
-  fill(255,0,0);
+  fill(255, 0, 0);
   circle(346, 259, 12);
   rect(351, 238, 5, 25, 3);
   rect(351, 238, 19, 5, 3);
@@ -339,7 +376,7 @@ void DrawTT()
   noStroke();
   fill(0);
   circle(350, 350, 50);
-  fill(255,0,0);
+  fill(255, 0, 0);
   circle(346, 359, 12);
   rect(351, 338, 5, 25, 3);
   rect(351, 338, 19, 5, 3);
@@ -354,7 +391,7 @@ void DrawTT()
   noStroke();
   fill(0);
   circle(350, 450, 50);
-  fill(255,0,0);
+  fill(255, 0, 0);
   circle(346, 459, 12);
   rect(351, 438, 5, 25, 3);
   rect(351, 438, 19, 5, 3);
@@ -369,7 +406,7 @@ void DrawTT()
   noStroke();
   fill(0);
   circle(350, 550, 50);
-  fill(255,0,0);
+  fill(255, 0, 0);
   circle(346, 559, 12);
   rect(351, 538, 5, 25, 3);
   rect(351, 538, 19, 5, 3);
@@ -384,7 +421,7 @@ void DrawTT()
   noStroke();
   fill(0);
   circle(350, 650, 50);
-  fill(255,0,0);
+  fill(255, 0, 0);
   circle(346, 659, 12);
   rect(351, 638, 5, 25, 3);
   rect(351, 638, 19, 5, 3);
@@ -394,18 +431,32 @@ void DrawTT()
   rect(349, 635, 19, 5, 3);
   popStyle();
 
+  //key
+  pushStyle();
+  noStroke();
+  fill(0);
+  circle(x, y, 50);
+  fill(255, 0, 0);
+  circle(x - 4, y + 9, 12);
+  rect(x + 1, y - 12, 5, 25, 3);
+  rect(x + 1, y - 12, 19, 5, 3);
+  fill(255);
+  circle(x - 6, y + 6, 12);
+  rect(x - 1, y - 15, 5, 26, 3);
+  rect(x - 1, y - 15, 19, 5, 3);
+  popStyle();
 }
 
-void DrawIG()
+void DrawIG(float x, float y)
 {
   // Monday
   pushStyle();
   fill(230, 30, 245);
-  rect(230, 40, 45,45,10);
+  rect(230, 40, 45, 45, 10);
   noFill();
   stroke(255);
   strokeWeight(2);
-  rect(235,45,35,35,7);
+  rect(235, 45, 35, 35, 7);
   noFill();
   strokeWeight(2);
   stroke(255);
@@ -418,11 +469,11 @@ void DrawIG()
   // Tuesday
   pushStyle();
   fill(230, 30, 245);
-  rect(230, 130, 45,45,10);
+  rect(230, 130, 45, 45, 10);
   noFill();
   stroke(255);
   strokeWeight(2);
-  rect(235,135,35,35,7);
+  rect(235, 135, 35, 35, 7);
   noFill();
   strokeWeight(2);
   stroke(255);
@@ -435,11 +486,11 @@ void DrawIG()
   // Wednesday
   pushStyle();
   fill(230, 30, 245);
-  rect(230, 230, 45,45,10);
+  rect(230, 230, 45, 45, 10);
   noFill();
   stroke(255);
   strokeWeight(2);
-  rect(235,235,35,35,7);
+  rect(235, 235, 35, 35, 7);
   noFill();
   strokeWeight(2);
   stroke(255);
@@ -452,11 +503,11 @@ void DrawIG()
   // Thursday
   pushStyle();
   fill(230, 30, 245);
-  rect(230, 330, 45,45,10);
+  rect(230, 330, 45, 45, 10);
   noFill();
   stroke(255);
   strokeWeight(2);
-  rect(235,335,35,35,7);
+  rect(235, 335, 35, 35, 7);
   noFill();
   strokeWeight(2);
   stroke(255);
@@ -469,11 +520,11 @@ void DrawIG()
   // Friday
   pushStyle();
   fill(230, 30, 245);
-  rect(230, 430, 45,45,10);
+  rect(230, 430, 45, 45, 10);
   noFill();
   stroke(255);
   strokeWeight(2);
-  rect(235,435,35,35,7);
+  rect(235, 435, 35, 35, 7);
   noFill();
   strokeWeight(2);
   stroke(255);
@@ -486,11 +537,11 @@ void DrawIG()
   // Saturday
   pushStyle();
   fill(230, 30, 245);
-  rect(230, 530, 45,45,10);
+  rect(230, 530, 45, 45, 10);
   noFill();
   stroke(255);
   strokeWeight(2);
-  rect(235,535,35,35,7);
+  rect(235, 535, 35, 35, 7);
   noFill();
   strokeWeight(2);
   stroke(255);
@@ -503,11 +554,11 @@ void DrawIG()
   // Sunday
   pushStyle();
   fill(230, 30, 245);
-  rect(230, 630, 45,45,10);
+  rect(230, 630, 45, 45, 10);
   noFill();
   stroke(255);
   strokeWeight(2);
-  rect(235,635,35,35,7);
+  rect(235, 635, 35, 35, 7);
   noFill();
   strokeWeight(2);
   stroke(255);
@@ -516,77 +567,153 @@ void DrawIG()
   fill(255);
   circle(265, 642, 6);
   popStyle();
+
+  //key
+  pushStyle();
+  fill(230, 30, 245);
+  rect(x - 22.5, y - 22.5, 45, 45, 10);
+  noFill();
+  stroke(255);
+  strokeWeight(2);
+  rect(x - 17.5, y - 17.5, 35, 35, 7);
+  circle(x + 0.5, y + 3, 20);
+  noStroke();
+  fill(255);
+  circle(x + 12.5, y - 8, 6);
+  popStyle();
 }
 
-void DrawWhatsApp()
+void DrawWhatsApp(float x, float y)
 {
   // Monday
   pushStyle();
-  fill(37,210,101);
+  fill(37, 210, 101);
   circle(520, 60, 50);
   noFill();
   stroke(255);
   strokeWeight(5);
-  arc(520,60,25,25,radians(45),radians(225));
+  arc(520, 60, 25, 25, radians(45), radians(225));
   popStyle();
 
   // Tuesday
   pushStyle();
-  fill(37,210,101);
+  fill(37, 210, 101);
   circle(520, 150, 50);
   noFill();
   stroke(255);
   strokeWeight(5);
-  arc(520,150,25,25,radians(45),radians(225));
+  arc(520, 150, 25, 25, radians(45), radians(225));
   popStyle();
 
   // Wednesday
   pushStyle();
-  fill(37,210,101);
+  fill(37, 210, 101);
   circle(520, 250, 50);
   noFill();
   stroke(255);
   strokeWeight(5);
-  arc(520,250,25,25,radians(45),radians(225));
+  arc(520, 250, 25, 25, radians(45), radians(225));
   popStyle();
 
   // Thursday
   pushStyle();
-  fill(37,210,101);
+  fill(37, 210, 101);
   circle(520, 350, 50);
   noFill();
   stroke(255);
   strokeWeight(5);
-  arc(520,350,25,25,radians(45),radians(225));
+  arc(520, 350, 25, 25, radians(45), radians(225));
   popStyle();
 
   // Friday
   pushStyle();
-  fill(37,210,101);
+  fill(37, 210, 101);
   circle(520, 450, 50);
   noFill();
   stroke(255);
   strokeWeight(5);
-  arc(520,450,25,25,radians(45),radians(225));
+  arc(520, 450, 25, 25, radians(45), radians(225));
   popStyle();
-  
+
   // Saturday
   pushStyle();
-  fill(37,210,101);
+  fill(37, 210, 101);
   circle(520, 550, 50);
   noFill();
   stroke(255);
   strokeWeight(5);
-  arc(520,550,25,25,radians(45),radians(225));
+  arc(520, 550, 25, 25, radians(45), radians(225));
   popStyle();
-  
+
   // Sunday
   pushStyle();
-  fill(37,210,101);
+  fill(37, 210, 101);
   circle(520, 650, 50);
   noFill();
   stroke(255);
   strokeWeight(5);
-  arc(520,650,25,25,radians(45),radians(225));
+  arc(520, 650, 25, 25, radians(45), radians(225));
   popStyle();
+
+  //key
+  pushStyle();
+  fill(37, 210, 101);
+  circle(x, y, 50);
+  noFill();
+  stroke(255);
+  strokeWeight(5);
+  arc(x, y, 25, 25, radians(45), radians(225));
+  popStyle();
+}
+
+void drawKey()
+{
+  fill(0);
+  textSize(24);
+  text("Key", 1040, 120);
+
+  // Spotify
+  DrawSpotify(915, 220);
+  fill(30);
+  textSize(20);
+  text("Spotify", 960, 215);
+  fill(128);
+  textSize(16);
+  text("week: 13h 10m", 960, 245);
+
+  // Instagram
+  DrawIG(915, 320);
+  fill(30);
+  textSize(20);
+  text("Instagram", 960, 315);
+  fill(128);
+  textSize(16);
+  text("week: 7h 05m", 960, 345);
+
+  // TikTok
+  DrawTT(915, 420);
+  fill(30);
+  textSize(20);
+  text("TikTok", 960, 415);
+  fill(128);
+  textSize(16);
+  text("week: 14h 00m", 960, 445);
+
+  // YouTube
+  DrawYT(915, 520);
+  fill(30);
+  textSize(20);
+  text("YouTube", 960, 515);
+  fill(128);
+  textSize(16);
+  text("week: 15h 25m", 960, 545);
+
+  // WhatsApp
+  DrawWhatsApp(915, 620);
+  fill(30);
+  textSize(20);
+  text("WhatsApp", 960, 615);
+  fill(128);
+  textSize(16);
+  text("week: 3h 50m", 960, 645);
 }
