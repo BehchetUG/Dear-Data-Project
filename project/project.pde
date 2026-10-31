@@ -670,50 +670,57 @@ void drawKey()
 {
   fill(0);
   textSize(24);
-  text("Key", 1040, 120);
+  textAlign(CENTER);
+  text("Key", 1045, 120);
+  textAlign(LEFT);
 
   // Spotify
-  DrawSpotify(915, 220);
+  DrawSpotify(960, 220);
   fill(30);
   textSize(20);
-  text("Spotify", 960, 215);
+  text("Spotify", 1010, 215);
   fill(128);
   textSize(16);
-  text("week: 13h 10m", 960, 245);
+  text("week: 13h 10m", 1010, 245);
 
   // Instagram
-  DrawIG(915, 320);
+  DrawIG(960, 320);
   fill(30);
   textSize(20);
-  text("Instagram", 960, 315);
+  text("Instagram", 1010, 315);
   fill(128);
   textSize(16);
-  text("week: 7h 05m", 960, 345);
+  text("week: 7h 05m", 1010, 345);
 
   // TikTok
-  DrawTT(915, 420);
+  DrawTT(960, 420);
   fill(30);
   textSize(20);
-  text("TikTok", 960, 415);
+  text("TikTok", 1010, 415);
   fill(128);
   textSize(16);
-  text("week: 14h 00m", 960, 445);
+  text("week: 14h 00m", 1010, 445);
 
   // YouTube
-  DrawYT(915, 520);
+  DrawYT(960, 520);
   fill(30);
   textSize(20);
-  text("YouTube", 960, 515);
+  text("YouTube", 1010, 515);
   fill(128);
   textSize(16);
-  text("week: 15h 25m", 960, 545);
+  text("week: 15h 25m", 1010, 545);
 
   // WhatsApp
-  DrawWhatsApp(915, 620);
+  DrawWhatsApp(960, 620);
   fill(30);
   textSize(20);
-  text("WhatsApp", 960, 615);
+  text("WhatsApp", 1010, 615);
   fill(128);
   textSize(16);
-  text("week: 3h 50m", 960, 645);
+  text("week: 3h 50m", 1010, 645);
+
+  // Whole week
+  fill(0);
+ // textSize(20);
+  text("Whole week: 53h 30m", 940, 700);
 }
