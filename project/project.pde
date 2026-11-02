@@ -35,7 +35,13 @@ void draw()
 
 {
   background(255, 183, 238);
-
+  pushStyle();
+  textSize(28);
+  textAlign(LEFT);
+  text("Title: A week of my screen time", 50, 30);
+  textSize(16);
+  text("Bigger the size of shape = more time spent on it", 55, 60);
+  popStyle();
   //Monday
 
   //DrawSpotify();
@@ -721,6 +727,6 @@ void drawKey()
 
   // Whole week
   fill(0);
- // textSize(20);
+  // textSize(20);
   text("Whole week: 53h 30m", 940, 700);
 }
