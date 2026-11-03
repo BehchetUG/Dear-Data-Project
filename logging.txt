@@ -36,7 +36,7 @@ Split across the top 5 apps that I used the most:
     Spotify - 2 hour 30 mins, Instagram - 1 hour 35 mins, TikTok - 2 hour 55 mins, YouTube - 3 hours and 40 mins and WhatsApp - 50 mins
 
 --------------------------------------------------
-Writing down my Data Collection for the second week:
+Writing down my Data Collection for the second week: Will finish adding the specific timings after.
 ---------------------------------------------------
 
 Monday - Screen time Total was 4 hours and 20 minutes
@@ -69,7 +69,7 @@ Split across the top 5 apps that I used the most:
 
 
 --------------------------------------------------
-Writing down my Data Collection for the third week:
+Writing down my Data Collection for the third week: Will finish adding the specific timings after.
 ---------------------------------------------------
 
 Monday - Screen time Total was 5 hours and 30 minutes
@@ -99,3 +99,6 @@ Split across the top 5 apps that I used the most:
 Sunday - Screen time Total was 9 hours and 20 minutes
 Split across the top 5 apps that I used the most:
     Spotify, Instagram, TikTok, YouTube and WhatsApp
+
+
+I have finished collecting 100+ data points on all 5 of my screen time apps and my next step could be to turn these into a csv file next.
